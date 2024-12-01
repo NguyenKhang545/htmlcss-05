@@ -10,3 +10,86 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
 }
+
+/* Common */
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 58px;
+
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 149px;
+    background: #212832;
+    border-radius: 8px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+/* Header */
+.header {
+    padding-top: 42px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.navbar__link {
+    padding: 8px 23px;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.navbar__link--active,
+.navbar__link:hover,
+.action__sign-in {
+    text-shadow: 0 0 1px currentColor;
+    color: #212832;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    right: 23px;
+    border-radius: 99px;
+    background: #7264d6;
+}
+
+.action {
+    margin-left: auto;
+}
+
+.action__sign-up {
+    --height: 52px;
+    min-width: 113px;
+    border-radius: 6px;
+    margin-left: 28px;
+}
