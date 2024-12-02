@@ -35,6 +35,8 @@ a {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
+    border: none;
+    outline: none;
 }
 
 .btn:hover {
@@ -92,4 +94,196 @@ a {
     min-width: 113px;
     border-radius: 6px;
     margin-left: 28px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 160px;
+    align-items: center;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__title {
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    position: relative;
+    padding-left: 30px;
+}
+
+.hero__title::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.hero__highlight {
+    color: #7264d6;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.email-form {
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.email-form__input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 23px;
+    border-radius: inherit;
+}
+
+.email-form__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+}
+
+.email-form__submit {
+    background: #7264d6;
+}
+
+.hero__private {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hero__media {
+    height: 562px;
+    flex: 1;
+    position: relative;
+}
+
+.hero__img {
+    width: 298px;
+    display: block;
+}
+
+.hero-deposit {
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 113px;
+    left: -100px;
+}
+
+.hero-deposit__decor-text {
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.hero-deposit__decor-price {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+}
+
+.hero-secured-funds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+    position: absolute;
+    bottom: 61px;
+    right: 100px;
+}
+
+.hero-secured-funds__content {
+    margin-left: 11px;
+}
+
+.hero-secured-funds__price,
+.hero-secured-funds__text {
+    display: block;
+    color: #fff;
+}
+
+.hero-secured-funds__price {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hero-secured-funds__text {
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.hero-interest {
+    width: 130px;
+    height: 130px;
+    background: #da6464;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 127px;
+}
+
+.hero-interest__data,
+.hero-interest__text {
+    display: block;
+}
+
+.hero-interest__data {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__text {
+    color: #fff;
+    font-size: 1.6rem;
 }
