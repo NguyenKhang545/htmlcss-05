@@ -42,6 +42,34 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
+
+.section-title {
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    position: relative;
+    padding-left: 30px;
+}
+
+.section-title::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.section-heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
 /* Header */
 .header {
     padding-top: 42px;
@@ -372,32 +400,8 @@ a {
     flex: 1;
 }
 
-.work__title-top {
-    color: #696d77;
-    font-size: 1.6rem;
-    line-height: 1.75;
-    position: relative;
-    padding-left: 30px;
-}
-
-.work__title-top::before {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 2px;
-    background: #696d77;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-}
-
 .work__heading {
-    margin: 12px 0 70px;
-    color: #212832;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.25;
+    margin-bottom: 70px;
 }
 
 .work__title {
@@ -414,4 +418,189 @@ a {
     line-height: 1.75;
     width: 470px;
     margin-top: 16px;
+}
+
+/* Pay */
+.pay-01,
+.pay-02 {
+    margin-top: 160px;
+}
+
+.pay__inner-01,
+.pay__inner-02 {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.pay__inner-02 {
+    column-gap: 230px;
+}
+
+.pay__content-01,
+.pay__content-02 {
+    width: 40, 1709401709%;
+}
+
+.pay__media-01,
+.pay__media-02 {
+    flex: 1;
+    position: relative;
+}
+
+.pay__heading {
+    width: 470px;
+}
+
+.pay__desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    width: 470px;
+    margin-top: 20px;
+}
+
+.pay__list {
+    margin-top: 28px;
+}
+
+.pay__link {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.pay__item {
+    margin-top: 18px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.pay__item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.pay__link-start {
+    margin-top: 38px;
+}
+
+.pay__img {
+    display: block;
+}
+
+.pay-bank {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    width: 276px;
+    height: 86px;
+    position: absolute;
+    top: -48px;
+    right: 0;
+}
+
+.pay-bank__inner {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+}
+
+.pay-bank__text-1,
+.pay-bank__text-2,
+.pay-bank__price,
+.pay-bank__day {
+    display: block;
+}
+
+.pay-bank__text-1 {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pay-bank__text-2 {
+    margin-top: 4px;
+    color: #696d76;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+}
+
+.pay-bank__left {
+    margin-left: auto;
+}
+
+.pay-bank__price {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+.pay-bank__day {
+    color: #696d76;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 3px;
+}
+
+.pay-income {
+    border-radius: 16px;
+    background: #439f90;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+}
+
+.pay-income__text-01,
+.pay-income__price {
+    display: block;
+    color: #fff;
+}
+
+.pay-income__text-01 {
+    font-size: 1.2rem;
+    margin-top: 14px;
+}
+
+.pay-income__price {
+    margin-top: 6px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.pay-02__img {
+    width: 413px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.pay-02__img-wrap {
+    position: relative;
+}
+
+.pay-02__img-wrap::before {
+    content: url(../img/pay-02-background.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
