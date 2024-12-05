@@ -604,3 +604,50 @@ a {
     left: 0;
     right: 0;
 }
+/* Clients */
+.client {
+    margin-top: 160px;
+}
+
+.client__top {
+    text-align: center;
+}
+
+.client__title {
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+.client__title::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.client__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.client__desc {
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-top: 18px;
+    width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+}
