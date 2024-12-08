@@ -80,6 +80,10 @@ a {
     align-items: center;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 .navbar__list {
     display: flex;
     align-items: center;
