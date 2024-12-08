@@ -22,6 +22,11 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- AOS ANIMATION -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -103,7 +108,7 @@
                                     class="hero__img"
                                 />
                             </figure>
-                            <div class="hero-deposit">
+                            <div data-aos="fade-right" class="hero-deposit">
                                 <img
                                     src="./assets/img/hero-decor-01.svg"
                                     alt=""
@@ -116,7 +121,10 @@
                                     >$32000</span
                                 >
                             </div>
-                            <div class="hero-secured-funds">
+                            <div
+                                class="hero-secured-funds"
+                                data-aos="fade-left"
+                            >
                                 <img
                                     src="./assets/img/hero-decor-02.svg"
                                     alt=""
@@ -131,7 +139,7 @@
                                     >
                                 </div>
                             </div>
-                            <div class="hero-interest">
+                            <div class="hero-interest" data-aos="flip-left">
                                 <div class="hero-interest__content">
                                     <span class="hero-interest__data">0%</span>
                                     <span class="hero-interest__text"
@@ -153,14 +161,19 @@
                                     src="./assets/img/work-01.png"
                                     alt=""
                                     class="work__img"
+                                    data-aos="fade-right"
                                 />
                             </figure>
                             <img
                                 src="./assets/img/work-decor-01.svg"
                                 alt=""
                                 class="work__decor-01"
+                                data-aos="fade-left"
                             />
-                            <div class="work__decor-02">
+                            <div
+                                class="work__decor-02"
+                                data-aos="fade-up-right"
+                            >
                                 <img
                                     src="./assets/img/work-decor-02.svg"
                                     alt=""
@@ -176,7 +189,7 @@
                                 </div>
                             </div>
                         </div>
-                        <section class="work__content">
+                        <section class="work__content" data-aos="fade-left">
                             <p class="section-title">Digital Smart Wallet</p>
                             <h2 class="section-heading work__heading">
                                 How It Works
@@ -212,7 +225,10 @@
             <section class="pay-01">
                 <div class="container">
                     <div class="pay__inner-01">
-                        <section class="pay__content-01">
+                        <section
+                            class="pay__content-01"
+                            data-aos="fade-up-right"
+                        >
                             <p class="section-title">Digital Smart Wallet</p>
                             <h2 class="section-heading pay__heading">
                                 One Card For All Your Payments
@@ -251,7 +267,7 @@
                                     class="pay__img"
                                 />
                             </figure>
-                            <div class="pay-bank">
+                            <div class="pay-bank" data-aos="flip-left">
                                 <div class="pay-bank__inner">
                                     <img
                                         src="./assets/img/pay-send.svg"
@@ -276,7 +292,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pay-income">
+                            <div class="pay-income" data-aos="zoom-in-down">
                                 <img
                                     src="./assets/img/pay-Income.svg"
                                     alt=""
@@ -299,10 +315,14 @@
                                     src="./assets/img/pya-02-img.png"
                                     alt=""
                                     class="pay-02__img"
+                                    data-aos="zoom-in-right"
                                 />
                             </figure>
                         </div>
-                        <section class="pay__content-02">
+                        <section
+                            class="pay__content-02"
+                            data-aos="zoom-in-left"
+                        >
                             <p class="section-title">Digital Smart Wallet</p>
                             <h2 class="section-heading pay__heading">
                                 Transfer and Deposite Your Money Anytime
@@ -414,7 +434,7 @@
                     </div>
                     <div class="blog__list">
                         <!-- Blog item 01 -->
-                        <div class="blog-item">
+                        <div class="blog-item" data-aos="fade-right">
                             <img
                                 src="./assets/img/blog__img-01.jpg"
                                 alt=""
@@ -434,7 +454,7 @@
                             </div>
                         </div>
                         <!-- Blog item 02 -->
-                        <div class="blog-item">
+                        <div class="blog-item" data-aos="fade-left">
                             <img
                                 src="./assets/img/blog__img-02.jpg"
                                 alt=""
@@ -454,7 +474,7 @@
                             </div>
                         </div>
                         <!-- Blog item 03 -->
-                        <div class="blog-item">
+                        <div class="blog-item" data-aos="fade-right">
                             <img
                                 src="./assets/img/blog__img-03.jpg"
                                 alt=""
@@ -474,7 +494,7 @@
                             </div>
                         </div>
                         <!-- Blog item 04 -->
-                        <div class="blog-item">
+                        <div class="blog-item" data-aos="fade-left">
                             <img
                                 src="./assets/img/blog__img-04.jpg"
                                 alt=""
@@ -524,21 +544,25 @@
                             src="./assets/img/app-decor.svg"
                             alt=""
                             class="app__decor"
+                            data-aos="flip-right"
                         />
                         <img
                             src="./assets/img/app-decor.svg"
                             alt=""
                             class="app__decor"
+                            data-aos="flip-right"
                         />
                         <img
                             src="./assets/img/app-decor.svg"
                             alt=""
                             class="app__decor"
+                            data-aos="flip-right"
                         />
                         <img
                             src="./assets/img/app-decor.svg"
                             alt=""
                             class="app__decor"
+                            data-aos="flip-right"
                         />
                     </div>
                 </div>
@@ -632,4 +656,8 @@
             </p>
         </footer>
     </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
